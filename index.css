@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Roboto Flex';
+  font-size: 3vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--color);
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#buttons {
+  flex-direction: row;
+}
+#quote-box{
+  background-color: var(--color2);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5);
+}
+#new-quote {
+  background-color: #1E90FF;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem  0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+#new-quote:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  transform: translateY(-0.1rem);
+  outline: solid 1px #5e9f2e;
+}
+#new-quote:active {
+  transform: scale(1.03);
+  background-color: #Ca7d1c;
+}
+body>div {
+  width: 70%;
+}
+#text-quote {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+#author-quote {
+  font-style: italic;
+  align-self: flex-end;
+}
+.fade-in {
+  animation: fadeIn 2s;
+}
+.fade-out {
+  animation: fadeOut 1s;
+}
+.icon-twitter{
+  color: black;
+  align-self: center;
+  margin: 0 1rem;
+}
+.icon-twitter:hover{
+  color: red;
+}
+.icon-twitter:active{
+  transform: scale(1.1);
+}
+.quote-all {
+  display: flex;
+  align-items: flex-start;
+}
+i:nth-of-type(2){
+  align-self: flex-end;
+}
+
+.quote-all>i{
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes fadeOut {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
