@@ -5,7 +5,10 @@ let classTimeout
 export const getQuote = async () => {
   $("#text-quote").text("");
   $("#author-quote").text("");
-  const response = await fetch(url)
+  const response = await fetch(url,{
+    mode: 'cors',
+    credentials: 'include'
+  })
   $("#text-quote").width();
   $("#author-quote").width();
   $("#text-quote").removeClass("fade-in")
