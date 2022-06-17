@@ -88,6 +88,12 @@ i:nth-of-type(2){
   font-size: 1rem;
   margin: 0 0.5rem;
 }
+
+.attribution {
+  margin-top: 2 rem;
+  font-size: 0.8rem;
+}
+
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
