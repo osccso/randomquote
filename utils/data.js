@@ -10,3 +10,4 @@ export const colorsPrimary = [
   '#2A3195','#A93583','#DA3361','#F65D4E','#F39943',
   '#EED73F','orange','#00CF35','#eb5030'
 ]
+export const url = 'https://api.quotable.io/random';

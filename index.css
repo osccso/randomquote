@@ -5,7 +5,6 @@
   font-family: 'Roboto Flex';
   font-size: 3vh;
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -60,7 +59,7 @@ body>div {
   align-self: flex-end;
 }
 .fade-in {
-  animation: fadeIn 2s;
+  animation: fadeIn 4s;
 }
 .fade-out {
   animation: fadeOut 1s;
